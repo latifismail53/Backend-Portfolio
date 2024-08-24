@@ -1,0 +1,57 @@
+GET http://localhost:5000/v1/profile
+###
+
+GET http://localhost:5000/v1/profile/2
+###
+
+POST http://localhost:5000/v1/profile
+Content-Type : application/json
+
+{
+    "name": "Latif ismail ajide",
+    "initials": "Latif",
+    "url" : "https://latifismailadjie.com",
+    "location" : "Jakarta Barat",
+    "locationLink" : "",
+    "description" : "Tester",
+    "summary" : "tester",
+    "avatarUrl" :"tester"
+}
+###
+
+PATCH  http://localhost:5000/v1/profile/2
+Content-Type : application/json
+
+{
+    "name": "Latif ismail",
+    "initials": "Latif",
+    "url" : "https://latifismailadjie.com",
+    "location" : "Jakarta Barat",
+    "locationLink" : "t",
+    "description" : "t",
+    "summary" : "t",
+    "avatarUrl" :"t"
+}
+
+###
+DELETE http://localhost:5000/v1/profile/1
+
+
+### SKILLS
+GET http://localhost:5000/v1/skills
+
+###
+POST http://localhost:5000/v1/skills
+Content-Type: application/json
+
+{
+    "name" : "Codeigniter"
+}
+
+###
+PATCH http://localhost:5000/v1/skills/1
+Content-Type: application/json
+
+{
+    "name" : "Express JS"
+}
