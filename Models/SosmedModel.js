@@ -19,7 +19,7 @@ module.exports = db.define(
       type: Sequelize.STRING,
     },
     icon: {
-      type: Sequelize.STRING(30),
+      type: Sequelize.STRING,
     },
   },
   {

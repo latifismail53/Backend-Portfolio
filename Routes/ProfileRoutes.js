@@ -1,8 +1,4 @@
-// define express router
-const express = require("express");
-const router = express.Router();
-
-// define routes controller profile
+const router = require("express").Router();
 const profileController = require("../Controllers/ProfileController");
 
 // define routes

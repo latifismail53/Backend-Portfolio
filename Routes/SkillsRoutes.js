@@ -1,6 +1,4 @@
-const express = require("express");
-const router = express.Router();
-
+const router = require("express").Router();
 const skillsController = require("../Controllers/SkillsController");
 
 router.get("/skills", skillsController.getAllSkill);
