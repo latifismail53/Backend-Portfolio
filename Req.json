@@ -1,0 +1,106 @@
+{
+  "name": "Latif ismail adjie",
+  "initials": "DV",
+  "url": "https://dillion.io",
+  "location": "Jakarta Barat, Indonesia",
+  "locationLink": "https://www.google.com/maps/place/sanfrancisco",
+  "description": "Fullstack developer. Saya suka membangun sesuatu dan membantu orang lain.",
+  "summary": "Pada awal karir saya, saya mendalami pengembangan web dengan spesialisasi dalam PHP dan framework seperti CodeIgniter dan Laravel. Setelah menyelesaikan puluhan proyek web dan satu aplikasi mobile berbasis Java, saya memutuskan untuk mengembangkan karir saya secara mandiri. Saya antusias terhadap teknologi, selalu belajar hal baru, dan tidak ragu mendalami topik kompleks. Saya percaya pada inovasi dan terus mencari cara untuk menciptakan solusi yang efektif dalam setiap proyek yang saya kerjakan.",
+  "avatarUrl": "/me.jpg",
+  "skills": [
+    "React",
+    "Next.js",
+    "Typescript",
+    "Node.js",
+    "Python",
+    "Go",
+    "Postgres",
+    "Docker",
+    "Kubernetes",
+    "Java",
+    "C++"
+  ],
+
+  "navbar": [
+    { "href": "/", "icon": "HomeIcon", "label": "Home" },
+    { "href": "/blog", "icon": "NotebookIcon", "label": "Blog" }
+  ],
+
+  "contact": {
+    "email": "hello@example.com",
+    "tel": "+123456789",
+    "social": {
+      "GitHub": {
+        "name": "GitHub",
+        "url": "https://dub.sh/dillion-github",
+        "icon": "Icons.github",
+        "navbar": true
+      }
+    }
+  },
+
+  "work": [
+    {
+      "company": "Atomic Finance",
+      "href": "#",
+      "badges": [],
+      "location": "Remote",
+      "title": "Bitcoin Protocol Engineer",
+      "logoUrl": "/atomic.png",
+      "start": "May 2021",
+      "end": "Oct 2022",
+      "description": "Fullstack developer. Saya suka membangun sesuatu dan membantu orang lain."
+    }
+  ],
+
+  "education": [
+    {
+      "school": "Buildspace",
+      "href": "https://buildspace.so",
+      "degree": "s3, s4, sf1, s5",
+      "logoUrl": "/buildspace.jpg",
+      "start": "2023",
+      "end": "2024"
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Chat Collect",
+      "href": "https://chatcollect.com",
+      "dates": "Jan 2024 - Feb 2024",
+      "active": true,
+      "description": "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      "technologies": [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI"
+      ],
+      "links": [
+        {
+          "type": "Website",
+          "href": "https://chatcollect.com",
+          "icon": ""
+        }
+      ],
+      "image": "",
+      "video": "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4"
+    }
+  ],
+  "hackathons": [
+    {
+      "title": "Hack Western 5",
+      "dates": "November 23rd - 25th, 2018",
+      "location": "London, Ontario",
+      "description": "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      "image": "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      "mlh": "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      "links": []
+    }
+  ]
+}
