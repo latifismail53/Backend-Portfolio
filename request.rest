@@ -1,6 +1,9 @@
 GET http://localhost:5000/v1/profile
 ###
 
+GET http://localhost:5000/v1/data
+###
+
 GET http://localhost:5000/v1/profile/2
 ###
 
@@ -27,10 +30,10 @@ Content-Type : application/json
     "initials": "Latif",
     "url" : "https://latifismailadjie.com",
     "location" : "Jakarta Barat",
-    "locationLink" : "t",
-    "description" : "t",
-    "summary" : "t",
-    "avatarUrl" :"t"
+    "locationLink" : "https://www.google.com/maps",
+    "description" : "Fullstack developer. Saya suka membangun sesuatu dan membantu orang lain.",
+    "summary" : "Pada awal karir saya, saya mendalami pengembangan web dengan spesialisasi dalam PHP dan framework seperti CodeIgniter dan Laravel. Setelah menyelesaikan puluhan proyek web dan satu aplikasi mobile berbasis Java, saya memutuskan untuk mengembangkan karir saya secara mandiri. Saya antusias terhadap teknologi, selalu belajar hal baru, dan tidak ragu mendalami topik kompleks. Saya percaya pada inovasi dan terus mencari cara untuk menciptakan solusi yang efektif dalam setiap proyek yang saya kerjakan.",
+    "avatarUrl" :"/me.jpg"
 }
 
 ###

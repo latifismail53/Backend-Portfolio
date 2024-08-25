@@ -5,9 +5,13 @@ const Profile = require("../Models/ProfileModel");
 const getAllProfile = async (req, res) => {
   try {
     const profile = await Profile.findAll();
+    if (!profile) {
+      return res.status(404).json({ msg: "Profile Not Found" });
+    }
     res.json({ profile });
   } catch (error) {
     console.log(error);
+    res.status(500).json({ msg: error.message });
   }
 };
 
