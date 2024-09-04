@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WehTip!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello Bang!
+      </h1>
+      <p class="subtitle">
+        Coba kelola link aff <strong>pake yang gampang aja</strong>!
+      </p>
+
+      <% if (message) { %>
+        <div class="notification is-success">
+          <%= message %>
+        </div>
+        <% } %>
+          <div class="content">
+            <form action="create-link" method="post">
+
+              <div class="field">
+                <label class="label">Nama Route buat linknya Brow!</label>
+                <div class="control">
+                  <input class="input" name="name" type="text" placeholder="e.g Google">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Link Brow!</label>
+                <div class="control">
+                  <input class="input" name="link" type="text" placeholder="e.g https://google.com">
+                </div>
+              </div>
+
+              <button type="submit" class="button mt-1 is-normal">
+                <span>Kirim</span>
+                <span class="icon is-small">
+                  <i class="fa-sharp fa-solid fa-paper-plane-top"></i>
+                </span>
+              </button>
+            </form>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Daftar Link Ente!
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <table class="table is-striped is-bordered is-fullwidth">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Link</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% links.forEach(link=> { %>
+                      <tr>
+                        <td>
+                          <%= link.name %>
+                        </td>
+                        <td>
+                          <a href="<%= link.link %>" target="_blank" class="button is-small is-link">
+                            <%= link.link %>
+                          </a>
+                        </td>
+                        <td>
+                          <a href="delete/<%= link.id %>" class="button is-small is-danger">
+                            <span>Delete</span>
+                            <span class="icon is-small">
+                              <i class="fa-sharp fa-solid fa-trash"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                      <% }); %>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+</body>
+
+</html>

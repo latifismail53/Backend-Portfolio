@@ -39,16 +39,19 @@ Content-Type : application/json
 ###
 DELETE http://localhost:5000/v1/profile/1
 
-
 ### SKILLS
 GET http://localhost:5000/v1/skills
+
+
+###
+DELETE http://localhost:5000/v1/skills/5
 
 ###
 POST http://localhost:5000/v1/skills
 Content-Type: application/json
 
 {
-    "name" : "Codeigniter"
+    "name" : "Tester"
 }
 
 ###
