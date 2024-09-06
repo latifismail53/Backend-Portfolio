@@ -21,4 +21,8 @@ router.get("/lemsepatu", (req, res) => {
   res.redirect("https://s.shopee.co.id/1B3Is1wnyq");
 });
 
+router.get("/cobain", (req, res) => {
+  res.redirect("https://s.shopee.co.id/6AS25BwoYy");
+});
+
 module.exports = router;
